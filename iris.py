@@ -79,7 +79,7 @@ with tf.Session() as sess:
                                         expected: y_train})
 
         summary, acc, err = sess.run([merged, accuracy, loss], feed_dict={inp: X_train,
-                                                                           expected: y_train})
+                                                                          expected: y_train})
 
         writer.add_summary(summary, i + 1)
 
